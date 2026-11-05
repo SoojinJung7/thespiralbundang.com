@@ -1,0 +1,18 @@
+import { chromium } from 'playwright';
+import { openLocal } from './preview.mjs';
+const out = process.argv[2];
+const b = await chromium.launch({ executablePath: process.env.CHROME_PATH });
+const d = await openLocal(b, 'desktop'); const p = await d.newPage();
+p.on('pageerror', e => console.log('pageerror', e.message));
+await p.goto('http://local.test/about-9/'); await p.waitForTimeout(1500);
+await p.hover('#hyu7izfs2'); await p.waitForTimeout(500);
+await p.screenshot({ path: out + '/menu_desktop.png', clip: { x: 300, y: 60, width: 840, height: 330 } });
+const m = await openLocal(b, 'mobile'); const q = await m.newPage();
+q.on('pageerror', e => console.log('pageerror', e.message));
+await q.goto('http://local.test/'); await q.waitForTimeout(1500);
+await q.click('#MENU_AS_CONTAINER_TOGGLE'); await q.waitForTimeout(700);
+await q.screenshot({ path: out + '/menu_mobile.png' });
+await q.click('[data-testid="MENU_AS_CONTAINER_EXPANDABLE_MENU-2"] > [data-testid="itemWrapper"] button').catch(e => console.log('no sub btn', e.message.split('\n')[0]));
+await q.waitForTimeout(700);
+await q.screenshot({ path: out + '/menu_mobile_sub.png' });
+await b.close();

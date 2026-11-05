@@ -1,0 +1,18 @@
+/* END STYLABLE DIRECTIVE RULES */
+
+#comp-m7mxbtxw .style-m7mxhjuw__root{-st-extends: StylableButton;transition: all 0.2s ease, visibility 0s;border: 0px solid rgb(174, 99, 63);background: rgba(174, 99, 63, 0);border-radius: 0px}
+
+/* START STYLABLE DIRECTIVE RULES */
+
+#comp-m7mxbtxw .style-m7mxhjuw__root:disabled{
+    border: 0px solid rgb(174, 99, 63);background: #E2E2E2}
+
+#comp-m7mxbtxw .style-m7mxhjuw__root:disabled .StylableButton2545352419__label{color: #8F8F8F}
+
+#comp-m7mxbtxw .style-m7mxhjuw__root:disabled .StylableButton2545352419__icon{fill: #8F8F8F}
+
+#comp-m7mxbtxw .style-m7mxhjuw__root .StylableButton2545352419__container{transition: inherit}
+
+#comp-m7mxbtxw .style-m7mxhjuw__root .StylableButton2545352419__label{transition: inherit;margin: 0px 4.5px 0px 0px;color: #F5F1EB;letter-spacing: 0em;display: initial; font-family: wfont_c0b476_2d0b4f8b33d64a04a8bb3251b3eeffd9,wf_2d0b4f8b33d64a04a8bb3251b,orig_pretendard_light; font-size: 15px; font-weight: normal; font-style: normal;font-family: wfont_c0b476_e3993ec0b60641da99dca743444040cf,wf_e3993ec0b60641da99dca7434,orig_pretendard_bold;font-style: normal;text-decoration-line: none;text-transform: none;direction: ltr;line-height: unset;text-align: left}
+
+#comp-m7mxbtxw .style-m7mxhjuw__root .StylableButton2545352419__icon{transition: inherit;display: initial;fill: #FFFFFF;margin: 0px 0px 0px 4.5px;width: 17px;height: 17px}
