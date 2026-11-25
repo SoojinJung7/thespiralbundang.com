@@ -7,7 +7,8 @@
   "redirects": [
     { "source": "/forum", "destination": "/", "permanent": true },
     { "source": "/forum/:path*", "destination": "/", "permanent": true },
-    { "source": "/home", "destination": "/", "permanent": true }
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/general-8", "destination": "/category/gyrotonic-pre-training", "permanent": true }
   ],
   "headers": [
     { "source": "/m/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] },
