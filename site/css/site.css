@@ -3,3 +3,5 @@
 .sp-carousel img{position:absolute;cursor:pointer;user-select:none;-webkit-user-drag:none}
 /* Wix sized images in px for the 1440px snapshot viewport; let them follow their boxes at any width */
 wow-image > img, wix-bg-image img, wix-image img { width: 100% !important; height: 100% !important; }
+/* Floating SNS box: the KakaoTalk (LINE-icon) item was removed, so size the list for Instagram only */
+#comp-iiagwss1 { height: 30px !important; }

@@ -280,6 +280,13 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && panel.classList.contains('is-open')) { close(); toggle.focus(); }
     });
+    // 페이지 안의 '상담 문의' / '레슨 문의하기' 버튼(예전 카카오톡 채널 링크)은 href="#chat" — 이 창을 연다.
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest && e.target.closest('a[href="#chat"]');
+      if (!a) return;
+      e.preventDefault();
+      open();
+    });
 
     function enterChat() { started = true; introForm.hidden = true; sendForm.hidden = false; }
 
